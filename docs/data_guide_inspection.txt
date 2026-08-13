@@ -1,0 +1,17 @@
+======================================================================
+WORKBOOK SHEETS
+======================================================================
+
+Sheet: 2024_code_list
+Rows: 1821
+Columns: 5
+First eight rows:
+('table', 'field name', 'code/format', 'label', 'note')
+('collision', 'collision_index', None, None, 'unique value for each collision. The collision_index combines the collision_year and collision_ref_no to form a unique ID. It can be used to join to Vehicle and Casualty')
+('collision', 'collision_year', None, None, None)
+('collision', 'collision_ref_no', None, None, 'In year id used by the police to reference a collision. It is not unique outside of the year, use collision_index for linking to other years')
+('collision', 'location_easting_osgr', None, None, 'Null if not known')
+('collision', 'location_northing_osgr', None, None, 'Null if not known')
+('collision', 'longitude', None, None, 'Null if not known')
+('collision', 'latitude', None, None, 'Null if not known')
+----------------------------------------------------------------------

@@ -1,0 +1,20 @@
+Guide columns:
+['table', 'field_name', 'code_format', 'label', 'note']
+
+Combined lookup saved to: /home/pvawsome/Projects/road-accident-dashboard/data/processed/lookups/all_lookup_codes.csv
+Total lookup rows: 146
+Created collision_collision_severity.csv: 3 codes
+Created collision_day_of_week.csv: 7 codes
+Created collision_road_type.csv: 8 codes
+Created collision_light_conditions.csv: 6 codes
+Created collision_weather_conditions.csv: 10 codes
+Created collision_road_surface_conditions.csv: 9 codes
+Created collision_urban_or_rural_area.csv: 4 codes
+Created casualty_casualty_class.csv: 3 codes
+Created casualty_sex_of_casualty.csv: 4 codes
+Created casualty_age_band_of_casualty.csv: 12 codes
+Created casualty_casualty_severity.csv: 3 codes
+Created casualty_casualty_type.csv: 31 codes
+Created vehicle_vehicle_type.csv: 30 codes
+Created vehicle_sex_of_driver.csv: 4 codes
+Created vehicle_age_band_of_driver.csv: 12 codes

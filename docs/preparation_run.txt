@@ -1,0 +1,26 @@
+Source rows:
+Collisions: 503,475
+Casualties: 640,522
+Vehicles: 920,692
+
+Key validation:
+Duplicate collision keys: 0
+Duplicate casualty keys: 0
+Duplicate vehicle keys: 0
+Saved /home/pvawsome/Projects/road-accident-dashboard/data/processed/clean/collisions_clean.csv
+Saved /home/pvawsome/Projects/road-accident-dashboard/data/processed/clean/collisions_clean.parquet
+Saved /home/pvawsome/Projects/road-accident-dashboard/data/processed/clean/casualties_clean.csv
+Saved /home/pvawsome/Projects/road-accident-dashboard/data/processed/clean/casualties_clean.parquet
+Saved /home/pvawsome/Projects/road-accident-dashboard/data/processed/clean/vehicles_clean.csv
+Saved /home/pvawsome/Projects/road-accident-dashboard/data/processed/clean/vehicles_clean.parquet
+
+Yearly KPI summary:
+ collision_year  total_collisions  reported_casualties  reported_vehicles  total_casualties  total_vehicles  collision_yoy_percent  casualty_yoy_percent
+           2020             91199               115584             167375            115584          167375                    NaN                   NaN
+           2021            101087               128209             186443            128209          186443                  10.84                 10.92
+           2022            106004               135480             193545            135480          193545                   4.86                  5.67
+           2023            104258               132977             189815            132977          189815                  -1.65                 -1.85
+           2024            100927               128272             183514            128272          183514                  -3.19                 -3.54
+
+Latest validated year: 2024
+Data preparation completed successfully.

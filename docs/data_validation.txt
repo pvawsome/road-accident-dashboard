@@ -1,0 +1,44 @@
+======================================================================
+BASIC COUNTS
+======================================================================
+Collision rows: 503,475
+Distinct collisions: 503,475
+Casualty rows: 640,522
+Distinct casualties: 640,522
+Vehicle rows: 920,692
+Distinct vehicles: 920,692
+
+======================================================================
+DUPLICATE KEYS
+======================================================================
+Duplicate collision indexes: 0
+Duplicate casualty keys: 0
+Duplicate vehicle keys: 0
+
+======================================================================
+UNMATCHED RECORDS
+======================================================================
+Casualties without a collision: 0
+Vehicles without a collision: 0
+
+======================================================================
+RECONCILIATION
+======================================================================
+Casualties reported by collision table: 640,522
+Rows in casualty table: 640,522
+Difference: 0
+
+Vehicles reported by collision table: 920,692
+Rows in vehicle table: 920,692
+Difference: 0
+
+======================================================================
+COUNTS BY YEAR
+======================================================================
+                collisions  casualties  vehicles
+collision_year                                  
+2020                 91199      115584    167375
+2021                101087      128209    186443
+2022                106004      135480    193545
+2023                104258      132977    189815
+2024                100927      128272    183514
