@@ -2,7 +2,7 @@
 
 An end-to-end data analytics project that turns five years of UK road-safety records into decision-ready reporting for road-safety and operations stakeholders.
 
-The project combines Python data preparation, SQL Server data engineering, relational modeling, reporting views, DAX measures, and a multi-page Power BI dashboard. It demonstrates the complete workflow from raw data validation to business recommendations—not just dashboard design.
+The project combines Python data preparation, SQL Server data engineering, relational modeling, reporting views, DAX measures, and a multi-page Power BI dashboard. It demonstrates the complete workflow from raw data validation to business recommendations
 
 ## Dashboard Export
 
