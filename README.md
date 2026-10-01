@@ -1,8 +1,13 @@
 # UK Road Safety Dashboard
 
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python 3.x](https://img.shields.io/badge/Python-3.x-3776AB.svg)
+![SQL Server 2022](https://img.shields.io/badge/SQL%20Server-2022-CC2927.svg)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811.svg)
+
 An end-to-end data analytics project that turns five years of UK road-safety records into decision-ready reporting for road-safety and operations stakeholders.
 
-The project combines Python data preparation, SQL Server data engineering, relational modeling, reporting views, DAX measures, and a multi-page Power BI dashboard. It demonstrates the complete workflow from raw data validation to business recommendations
+The project combines Python data preparation, SQL Server data engineering, relational modeling, reporting views, DAX measures, and a multi-page Power BI dashboard. It demonstrates the complete workflow from raw data validation to business recommendations.
 
 ## Dashboard Export
 
@@ -256,8 +261,9 @@ The large raw and processed CSV/Parquet files are intentionally excluded from ve
 
 ## Author
 
-**Pavanraj Parthiban**  
-Data Analytics Portfolio Project
+**Pavanraj Parthiban** — Data Analytics Portfolio Project
+
+[GitHub](https://github.com/pvawsome) · [LinkedIn](https://www.linkedin.com/in/pavanraj-parthiban)
 
 ## Licence
 
