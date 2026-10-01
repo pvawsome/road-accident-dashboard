@@ -116,6 +116,7 @@ The SQL scripts are organized in execution order:
 
 | Script | Purpose |
 |---|---|
+| `00_create_database.sql` | Creates the `RoadAccidentDB` database if it does not exist |
 | `01_create_tables.sql` | Creates staging and typed database tables |
 | `02_correct_collisions_staging.sql` | Aligns the collision staging-table order with the CSV |
 | `03_bulk_import_staging.sql` | Loads cleaned CSV files into staging tables |
@@ -202,6 +203,7 @@ road-accident-dashboard/
 ├── notebooks/
 │   └── 01_data_exploration.ipynb
 ├── sql/
+│   ├── 00_create_database.sql
 │   ├── 01_create_tables.sql
 │   ├── 02_correct_collisions_staging.sql
 │   ├── 03_bulk_import_staging.sql
@@ -229,10 +231,11 @@ road-accident-dashboard/
 3. Create and activate a Python virtual environment.
 4. Install the packages in `requirements.txt`.
 5. Run the Python inspection, lookup extraction, validation, and preparation scripts.
-6. Create `RoadAccidentDB` in SQL Server.
-7. Run the scripts in `sql/` in numeric order.
-8. Open Power BI Desktop and connect to the SQL Server reporting views.
-9. Refresh or recreate the Power BI data model and dashboard visuals.
+6. Run the scripts in `sql/` in numeric order. `00_create_database.sql` creates the
+   `RoadAccidentDB` database, and `03_bulk_import_staging.sql` holds the single
+   source-folder path you may need to change for your machine.
+7. Open Power BI Desktop and connect to the SQL Server reporting views.
+8. Refresh or recreate the Power BI data model and dashboard visuals.
 
 The large raw and processed CSV/Parquet files are intentionally excluded from version control.
 
@@ -255,3 +258,7 @@ The large raw and processed CSV/Parquet files are intentionally excluded from ve
 
 **Pavanraj Parthiban**  
 Data Analytics Portfolio Project
+
+## Licence
+
+Released under the [MIT License](LICENSE).

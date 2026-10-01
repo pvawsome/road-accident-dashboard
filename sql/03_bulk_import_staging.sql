@@ -1,6 +1,24 @@
 USE RoadAccidentDB;
 GO
 
+/* ==================================================================
+   03_bulk_import_staging.sql
+
+   Edit the :setvar line below, then run this script.
+
+   This script runs in SQLCMD mode. In SSMS enable it with
+   Query > SQLCMD Mode; from a terminal run it with the sqlcmd
+   utility. BULK INSERT reads the files server-side, so DataPath must
+   point to a folder the SQL Server service account can read -- which
+   is not necessarily the folder on the machine you are typing from.
+
+   The three *_clean.csv files are produced by src/prepare_data.py
+   into data/processed/clean/.
+   ================================================================== */
+
+:setvar DataPath "C:\SQLData\RoadAccidentData"
+
+
 /* Clear staging tables so the script can be safely rerun. */
 TRUNCATE TABLE stg.Collisions;
 TRUNCATE TABLE stg.Casualties;
@@ -11,7 +29,7 @@ GO
 PRINT 'Importing collisions...';
 
 BULK INSERT stg.Collisions
-FROM 'C:\SQLData\RoadAccidentData\collisions_clean.csv'
+FROM '$(DataPath)\collisions_clean.csv'
 WITH
 (
     FORMAT = 'CSV',
@@ -27,7 +45,7 @@ GO
 PRINT 'Importing casualties...';
 
 BULK INSERT stg.Casualties
-FROM 'C:\SQLData\RoadAccidentData\casualties_clean.csv'
+FROM '$(DataPath)\casualties_clean.csv'
 WITH
 (
     FORMAT = 'CSV',
@@ -43,7 +61,7 @@ GO
 PRINT 'Importing vehicles...';
 
 BULK INSERT stg.Vehicles
-FROM 'C:\SQLData\RoadAccidentData\vehicles_clean.csv'
+FROM '$(DataPath)\vehicles_clean.csv'
 WITH
 (
     FORMAT = 'CSV',
